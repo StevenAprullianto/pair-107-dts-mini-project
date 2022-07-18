@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import ProfilePage from './pages/ProfilePage';
+import LoginPage from './pages/LoginPage';
+import {Routes, Route} from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        
+        <Route path="/" element={<ProfilePage/>}/>
+
+        <Route path="login" element={<LoginPage/>}/>
+
+        {/* <Route path="formulir" element={<CustomForm/>}/> */}
+
+        {/* <Route path="animals" element={<AnimalListPage />} > */}
+
+          {/* <Route path=":animalId" 
+          element={<AnimalDetailPage/>}/>
+        </Route> */}
+        <Route path="*" element={<>404 Page Not Found !</>} />       
+      </Routes>
     </div>
   );
 }
