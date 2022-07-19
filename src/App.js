@@ -6,7 +6,8 @@ import {Routes, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+
+    <div style={{position:'absolute', width:'100%', height:'100%', backgroundColor:'black'}}>
       <Routes>
         
         <Route path="/" element={<ProfilePage/>}/>
@@ -17,9 +18,9 @@ function App() {
 
         {/* <Route path="animals" element={<AnimalListPage />} > */}
 
-          {/* <Route path=":animalId" 
-          element={<AnimalDetailPage/>}/>
-        </Route> */}
+        {/* <Route path=":animalId" 
+      //     element={<AnimalDetailPage/>}/>
+      //   </Route> */}
         <Route path="*" element={<>404 Page Not Found !</>} />       
       </Routes>
     </div>

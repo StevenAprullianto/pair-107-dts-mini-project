@@ -5,8 +5,8 @@ import ProfileContent from '../components/ProfileContent';
 const ProfilePage = () =>{
     return(
         <>
-        <ProfileNavbar/>  
-        <ProfileContent/>
+            <ProfileNavbar/>  
+            <ProfileContent/>
         </>
     )
 }
