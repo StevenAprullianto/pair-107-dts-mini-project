@@ -1,6 +1,7 @@
 import React from "react";
 import {Box, TextField, Button} from "@mui/material"
 import kemal from "../images/Kemal.png"
+import {Link} from "react-router-dom";
 
 const LoginPage = () => {
     return(
@@ -31,8 +32,9 @@ const LoginPage = () => {
                         InputLabelProps={{style : {color : 'white'} }}
                         sx={{border: '1px solid white', width:"300px", margin: "0 50px 0 800px"}}
                         />  
-
-                    <Button variant="contained" sx={{backgroundColor:'red', fontWeight:'bold', width:"300px", margin: "0 50px 0 800px"}}>Login</Button>
+                    <Link to="/home">
+                        <Button variant="contained" sx={{backgroundColor:'red', fontWeight:'bold', width:"300px", margin: "0 50px 0 800px"}}>Login</Button>
+                    </Link>
                 </Box>
             </Box>
         </>

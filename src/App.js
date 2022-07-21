@@ -1,6 +1,8 @@
 import './App.css';
 import ProfilePage from './pages/ProfilePage';
 import LoginPage from './pages/LoginPage';
+import HomePage from './pages/HomePage';
+import DetailPage from './pages/DetailPage';
 import {Routes, Route} from "react-router-dom";
 
 
@@ -14,13 +16,11 @@ function App() {
 
         <Route path="login" element={<LoginPage/>}/>
 
-        {/* <Route path="formulir" element={<CustomForm/>}/> */}
+        <Route path="home" element={<HomePage/>}/>
 
-        {/* <Route path="animals" element={<AnimalListPage />} > */}
+        <Route path="detail" element={<DetailPage/>}/>
 
-        {/* <Route path=":animalId" 
-      //     element={<AnimalDetailPage/>}/>
-      //   </Route> */}
+
         <Route path="*" element={<>404 Page Not Found !</>} />       
       </Routes>
     </div>
