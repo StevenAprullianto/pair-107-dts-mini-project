@@ -1,10 +1,13 @@
 import React from "react";
+import ProfileNavbar from '../components/ProfileNavbar';
+
 import { Box, Button, Typography } from "@mui/material";
 import {Link} from "react-router-dom";
 
 const HomePage = () => {
     return (
         <>
+        <ProfileNavbar/> 
             <Box sx={{width:"100%", textAlign:"center"}}>
                 <Typography variant="h1" color="white">Ini Home Page :)</Typography>
 
